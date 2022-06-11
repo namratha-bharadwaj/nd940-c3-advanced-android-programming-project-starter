@@ -2,5 +2,12 @@
 <resources>
     <declare-styleable name="LoadingButton">
 <!--   TODO: create custom attributes for the view-->
+        <attr name="progressColor" format="color"/>
+        <attr name="defaultColor" format="color" />
+        <attr name="pacmanProgressColor" format="color"/>
+        <attr name="defaultAnimationDuration" format="integer" />
+        <attr name="progressText" format="string"/>
+        <attr name="android:text" format="reference"/>
+        <attr name="android:textSize" format="reference"/>
     </declare-styleable>
 </resources>
