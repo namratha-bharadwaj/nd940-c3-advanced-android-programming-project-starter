@@ -12,6 +12,9 @@ import com.udacity.databinding.ActivityDetailBinding
 import com.udacity.main.MainActivity
 import com.udacity.utils.Constants
 import com.udacity.utils.Constants.Companion.EXTRA_NOTIFICATION_ID
+import kotlinx.android.synthetic.main.content_detail.view.details_ok_button
+import kotlinx.android.synthetic.main.content_detail.view.file_name
+import kotlinx.android.synthetic.main.content_detail.view.file_status
 
 class DetailActivity : AppCompatActivity() {
 
@@ -38,7 +41,7 @@ class DetailActivity : AppCompatActivity() {
 
         setupViews(statusMessage, downloadFile)
 
-        binding.detailContentLayout.okBtn.setOnClickListener {
+        binding.detailContentLayout.details_ok_button.setOnClickListener {
             Intent(this, MainActivity::class.java).run {
                 startActivity(this)
             }
@@ -57,8 +60,8 @@ class DetailActivity : AppCompatActivity() {
     }
 
     private fun setupViews(statusMessage: String, downloadedFile: String) {
-        binding.detailContentLayout.downloadStatusTv.text = statusMessage
-        binding.detailContentLayout.fileNameTv.text = downloadedFile
+        binding.detailContentLayout.file_status.text = statusMessage
+        binding.detailContentLayout.file_name.text = downloadedFile
     }
 
 }

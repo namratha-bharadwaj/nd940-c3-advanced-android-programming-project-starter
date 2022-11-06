@@ -30,4 +30,8 @@
 
     <string name="download_btn_text">Download</string>
     <string name="progress_text">We\'re loading</string>
+
+    <string name="file_name">File name:</string>
+    <string name="status">Status:</string>
+    <string name="ok">OK</string>
 </resources>
